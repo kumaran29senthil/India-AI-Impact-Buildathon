@@ -1,5 +1,8 @@
 fastapi
 uvicorn
-whisper
-librosa
 numpy
+librosa
+pydantic
+python-multipart
+openai-whisper
+torch
