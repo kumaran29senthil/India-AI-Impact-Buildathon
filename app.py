@@ -30,7 +30,7 @@ app.add_middleware(
 )
 
 # API Key (change before final submission)
-API_KEY = "sk_test_123456789"
+API_KEY = os.getenv("VOICE_API_KEY")
 
 @app.get("/")
 def read_root():
