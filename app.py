@@ -30,7 +30,13 @@ app.add_middleware(
 )
 
 # API Key (change before final submission)
+
+
 API_KEY = os.getenv("VOICE_API_KEY")
+
+if not API_KEY:
+    raise RuntimeError("VOICE_API_KEY environment variable not set")
+
 
 @app.get("/")
 def read_root():
